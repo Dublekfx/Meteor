@@ -1,3 +1,13 @@
 name: Meteor
 main: com.github.dublekfx.Meteor.Meteor
 version: 1.0
+commands:
+  meteor:
+    description: "For I am become Death, Destroyer of Worlds"
+    usage: /meteor <radius> p:<player>
+    permission: meteor.launch
+    permission-message: You are not Shiva!
+permissions:
+  meteor.launch:
+    description: Permits the user to reign justice down upon his enemies.
+    default: op
