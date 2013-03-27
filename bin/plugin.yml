@@ -4,7 +4,12 @@ version: 1.0
 commands:
   meteor:
     description: "For I am become Death, Destroyer of Worlds"
-    usage: /meteor <radius> p:<player>
+    usage: /meteor (Use /meteormod to specify a target and radius!)
+    permission: meteor.launch
+    permission-message: You are not Shiva!
+  meteormod:
+    description: "The Reckoning has arrived"
+    usage: /meteormod <player> <radius>
     permission: meteor.launch
     permission-message: You are not Shiva!
 permissions:
